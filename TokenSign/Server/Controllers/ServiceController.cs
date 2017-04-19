@@ -16,7 +16,7 @@ namespace Server.Controllers
         /// <summary>
         /// 根据用户名获取token
         /// </summary>
-        /// <param name="staffId"></param>
+        /// <param name="staffId">员工编号</param>
         /// <returns></returns>
         public HttpResponseMessage GetToken(string staffId)
         {
@@ -52,5 +52,8 @@ namespace Server.Controllers
 
             return HttpResponseExtension.toJson(JsonConvert.SerializeObject(resultMsg));
         }
+
+
+
     }
 }
